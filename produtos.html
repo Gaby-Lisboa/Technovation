@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <!-- Link para arquivos de estilos e fontes -->
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- Barra de navegação -->
+    <header>
+      <nav class="nav">
+        <!-- Logo -->
+        <a href="index.html">
+          <img class="logo" src="imagens/escrita-logo-removebg-preview.png" alt="Logo escrita">
+        </a>
+
+        <!-- Botão de abrir menu (hambúrguer) -->
+        <i class="uil uil-bars navOpenBtn"></i>
+
+        <!-- Links de navegação -->
+        <ul class="nav-links">
+          <!-- Botão para fechar o menu -->
+          <i class="uil uil-times navCloseBtn"></i>
+
+          <!-- Dropdown de produtos -->
+          <li class="dropdown">
+            <i class="uil uil-bolt"></i>
+            <a href="produtos.html">Produtos</a>
+            <div class="dropdown-content">
+              <a href="produtos.html">Smartphones</a>
+              <a href="produtos.html">Smart Watch</a>
+              <a href="produtos.html">Computadores</a>
+              <a href="produtos.html">Inteligência Artificial</a>
+              <a href="produtos.html">Realidade Virtual</a>
+              <a href="produtos.html">Periféricos</a>
+              <a href="produtos.html">Áudio</a>
+              <a href="produtos.html">Energia</a>
+            </div>
+          </li>
+
+          <!-- Outros itens do menu -->
+          <li>
+            <i class="uil uil-star openNav"></i>
+            <a href="#" id="favorites-link">Favoritos</a>
+          </li>
+          <li>
+            <i class="uil uil-shopping-bag openNav"></i>
+            <a href="#" id="cart-link">Carrinho</a>
+          </li>
+          <li>
+            <i class="uil uil-user openNav"></i>
+            <a href="login.html">Conta</a>
+          </li>
+        </ul>
+
+        <!-- Ícone de busca -->
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+
+        <!-- Caixa de busca -->
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Buscar produtos e marcas" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner de frete grátis -->
+    <div class="banner2">
+      <img id="banner3" src="imagens/banner3.png" alt="Banner 3" />
+    </div>
+    <h1 id="h1_produtos">
+      Produtos
+    </h1>
+    <!-- Seção de produtos do site -->
+    <div class="container">
+      <!-- Cartões de produtos -->
+      <div class="card">
+        <div class="main-imagem">
+          <img src="imagens/iphone15promaxx.jpg" alt="Imagem 1" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Apple iPhone 15 Pro Max (256 GB) — Titânio preto
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.1</p>
+            </div>
+          </div>
+          <p class="card-preco">R$7.499,99</p>
+          <p class="card-text">em 24x de R$312,49 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Smartphone Samsung Galaxy S23, 256GB Preto 5G, 8GB RAM.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Smartphone Samsung Galaxy S23, 256GB Preto 5G, 8GB RAM
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.8</p>
+            </div>
+          </div>
+          <p class="card-preco">R$2.999,99</p>
+          <p class="card-text">em 10x de R$ 333,20 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/iPhone 15 Pro Max Apple 256GB - Branco.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">iPhone 15 Pro Max Apple 256GB - Branco</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>5.0</p>
+            </div>
+          </div>
+          <p class="card-preco">R$7.999,99</p>
+          <p class="card-text">em 10x de R$799,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Smartphone Samsung Galaxy S23 Ultra, 5G, 256GB.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Smartphone Samsung Galaxy S23 Ultra, 5G, 256GB
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>5.0</p>
+            </div>
+          </div>
+          <p class="card-preco">R$4.999,99</p>
+          <p class="card-text">em 10x de 499,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Smartphone Samsung Galaxy S23 Ultra 512GB.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone Samsung Galaxy S23 Ultra 512GB</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.7</p>
+            </div>
+          </div>
+          <p class="card-preco">R$5.799,99</p>
+          <p class="card-text">em 10x de 579,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Apple iPhone 14, 5G,128GB - azul.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">iPhone 14 Plus Apple 128GB - Azul</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.8</p>
+            </div>
+          </div>
+          <p class="card-preco">R$6.199,99</p>
+          <p class="card-text">em 10x de 619,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Smartphone Samsung Galaxy S23 Ultra 5g, 256GB.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Smartphone Samsung Galaxy S23 Ultra 5g, 256GB, 12GB RAM
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>5.0</p>
+            </div>
+          </div>
+          <p class="card-preco">R$4.799,99</p>
+          <p class="card-text">em 10x de 479,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img src="imagens/iPhone 13 Apple 128GB - Verde.jpg" alt="Imagem 1" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">iPhone 13 Apple 128GB - Verde</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.2</p>
+            </div>
+          </div>
+          <p class="card-preco">R$3.999,99</p>
+          <p class="card-text">em 10x de 399,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/MacBook Air Apple 13, M2, CPU 8 Núcleos.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">MacBook Air Apple 13, M2, CPU 8 Núcleos</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>5.0</p>
+            </div>
+          </div>
+          <p class="card-preco">R$8.499,99</p>
+          <p class="card-text">em 10x de 849,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Notebook Acer Aspire 3 AMD Ryzen 5-7520U.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Notebook Acer Aspire 3 AMD Ryzen 5-7520U</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.1</p>
+            </div>
+          </div>
+          <p class="card-preco">R$2.599,99</p>
+          <p class="card-text">em 10x de 259,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Notebook Samsung Galaxy Book2 Intel Core i5-1235U.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Notebook Samsung Galaxy Book2 Intel Core i5-1235U
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.1</p>
+            </div>
+          </div>
+          <p class="card-preco">R$2.299,99</p>
+          <p class="card-text">em 10x de 229,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Notebook Asus Vivobook, AMD Ryzen 7-4800h.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Notebook Asus Vivobook, AMD Ryzen 7-4800h</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.6</p>
+            </div>
+          </div>
+          <p class="card-preco">R$3.199,99</p>
+          <p class="card-text">em 10x de 319,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Console Playstation 5 Sony, SSD 825GB.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Console Playstation 5 Sony, SSD 825GB</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.3</p>
+            </div>
+          </div>
+          <p class="card-preco">R$3.999,99</p>
+          <p class="card-text">em 10x de 399,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Headset Gamer Havit, Drivers 53mm.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Headset Gamer Havit, Drivers 53mm</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.0</p>
+            </div>
+          </div>
+          <p class="card-preco">R$199,99</p>
+          <p class="card-text">em 10x de 19,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Headset Gamer Sem Fio Redragon Zeus Pro.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Headset Gamer Sem Fio Redragon Zeus Pro</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.2</p>
+            </div>
+          </div>
+          <p class="card-preco">R$399,99</p>
+          <p class="card-text">em 10x de 39,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Óculos de Realidade Virtual Meta Quest 3, 128GB.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Óculos de Realidade Virtual Meta Quest 3, 128GB
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.7</p>
+            </div>
+          </div>
+          <p class="card-preco">R$4.999,99</p>
+          <p class="card-text">em 10x de 499,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Apple Watch SE 40mm GPS Caixa Meia-Noite.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Apple Watch SE 40mm GPS Caixa Meia-Noite</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.1</p>
+            </div>
+          </div>
+          <p class="card-preco">R$1.999,99</p>
+          <p class="card-text">em 10x de 199,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Echo (4ª Geração) com Alexa e Som Premium.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Echo (4ª Geração) com Alexa e Som Premium</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.2</p>
+            </div>
+          </div>
+          <p class="card-preco">R$559,99</p>
+          <p class="card-text">em 10x de 55,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Apple Watch SE 40mm GPS Caixa Prateada de Alumínio.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Apple Watch SE 40mm GPS Caixa Prateada de Alumínio
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.3</p>
+            </div>
+          </div>
+          <p class="card-preco">R$1.999,99</p>
+          <p class="card-text">em 10x de 199,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Echo Dot 5ª geração Amazon, com Alexa.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Echo Dot 5ª geração Amazon, com Alexa</h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.6</p>
+            </div>
+          </div>
+          <p class="card-preco">R$499,99</p>
+          <p class="card-text">em 10x de 49,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Caixa de Som JBL Partybox Encore Essential, Bluetooth.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Caixa de Som JBL Partybox Encore Essential, Bluetooth
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.1</p>
+            </div>
+          </div>
+          <p class="card-preco">R$599,99</p>
+          <p class="card-text">em 10x de 59,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Monitor Gamer LG UltraGear LG 34 Curvo LED.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Monitor Gamer LG UltraGear LG 34" Curvo LED
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.5</p>
+            </div>
+          </div>
+          <p class="card-preco">R$1.999,99</p>
+          <p class="card-text">em 10x de 199,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Gabinete Gamer Rise Mode Galaxy Glass, Mid Tower.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Gabinete Gamer Rise Mode Galaxy Glass, Mid Tower
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.8</p>
+            </div>
+          </div>
+          <p class="card-preco">R$459,99</p>
+          <p class="card-text">em 10x de 45,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-imagem">
+          <img
+            src="imagens/Gabinete Gamer Rise Mode Galaxy Glass, Mid Tower - Branco.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Gabinete Gamer Rise Mode Galaxy Glass, Mid Tower - Branco
+          </h5>
+          <div class="avaliacao">
+            <div class="estrelas">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <p>4.9</p>
+            </div>
+          </div>
+          <p class="card-preco">R$499,99</p>
+          <p class="card-text">em 10x de 49,99 sem juros</p>
+          <p class="card-frete">FRETE GRATIS</p>
+          <div class="card-buttons">
+            <a href="produto.html" id="btn1">COMPRAR</a>
+            <a href="#" class="btn1 add-to-cart-button" id="btn1"
+              ><i class="fa fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="add-to-favorites" id="btn1"
+              ><i class="fa fa-star"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Modal de carrinho -->
+        <div id="cart-modal" class="cart-modal">
+          <div class="cart-modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items-container"></div>
+            <p>Total: <span id="total-price">R$ 0,00</span></p>
+            <button id="checkout-button">Finalizar Compra</button>
+          </div>
+        </div>
+    
+        <!-- Modal de favoritos -->
+        <div id="favorites-modal" class="cart-modal">
+          <div class="cart-modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Seus Favoritos</h2>
+            <div id="favorites-items-container"></div>
+          </div>
+        </div>
+    
+        <!-- Rodapé -->
+        <footer>
+          <div class="container-footer">
+            <div class="row-footer">
+              <!-- Colunas do rodapé com links -->
+              <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                  <li><a href="sobre_nos.html">Sobre nós</a></li>
+                  <li><a href="sobre_nos.html">Nossos serviços</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Obter ajuda</h4>
+                <ul>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="pagamento.html">Opções de pagamento</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Mais vendidos</h4>
+                <ul>
+                  <li><a href="produtos.html">Celulares</a></li>
+                  <li><a href="produtos.html">Smart Watch</a></li>
+                  <li><a href="produtos.html">Energia e Carregamento</a></li>
+                  <li><a href="produtos.html"> Inteligência Artificial</a></li>
+                </ul>
+              </div>
+              <!-- Ícones de mídias sociais -->
+              <div class="footer-col">
+                <div class="medias-socias">
+                  <a href="https://github.com/Gaby-Lisboa">
+                    <i class="fa fa-github"></i>
+                  </a>
+                  <a href="https://www.instagram.com/_.lisbooa/">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gabrielly-lisboa-b2830621b/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h6>Todos os direitos reservados a Gabrielly Lisboa © 2024</h6>
+          </div>
+        </footer>
+    
+        <!-- Script -->
+        <script src="script/script.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            // Inicializa carrinho e favoritos do localStorage
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+            // Seleciona botões de adicionar ao carrinho e favoritos
+            const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
+            const addToFavoritesButtons = document.querySelectorAll(".add-to-favorites");
+            const cartModal = document.getElementById("cart-modal");
+            const favoritesModal = document.getElementById("favorites-modal");
+            const closeButtons = document.querySelectorAll(".close-button");
+            const checkoutButton = document.getElementById("checkout-button");
+            const cartLink = document.getElementById("cart-link");
+            const favoritesLink = document.getElementById("favorites-link");
+    
+            // Adiciona evento para adicionar ao carrinho
+            addToCartButtons.forEach((button) => {
+              button.addEventListener("click", (event) => {
+                event.preventDefault();
+                const card = event.target.closest(".card");
+                const image = card.querySelector("img").src;
+                const name = card.querySelector(".card-title").textContent;
+                const price = parseFloat(card.querySelector(".card-preco").textContent.replace("R$", "").replace(",", ".")) * 1000;
+    
+                // Verifica se o produto já está no carrinho
+                const existingProduct = cart.find((item) => item.name === name);
+                if (existingProduct) {
+                  existingProduct.quantity++;
+                } else {
+                  cart.push({
+                    image,
+                    name,
+                    price,
+                    quantity: 1,
+                  });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                updateCartModal();
+                cartModal.style.display = "block";
+              });
+            });
+    
+            // Adiciona evento para adicionar aos favoritos
+            addToFavoritesButtons.forEach((button) => {
+              button.addEventListener("click", (event) => {
+                event.preventDefault();
+                const card = event.target.closest(".card");
+                const image = card.querySelector("img").src;
+                const name = card.querySelector(".card-title").textContent;
+                const price = parseFloat(card.querySelector(".card-preco").textContent.replace("R$", "").replace(",", ".")) * 1000;
+    
+                const existingProduct = favorites.find((item) => item.name === name);
+                if (!existingProduct) {
+                  favorites.push({
+                    image,
+                    name,
+                    price,
+                  });
+                }
+                localStorage.setItem("favorites", JSON.stringify(favorites));
+                updateFavoritesModal();
+                favoritesModal.style.display = "block";
+              });
+            });
+    
+            // Fecha os modais
+            closeButtons.forEach((button) => {
+              button.addEventListener("click", () => {
+                cartModal.style.display = "none";
+                favoritesModal.style.display = "none";
+              });
+            });
+    
+            // Fecha modal ao clicar fora dele
+            window.addEventListener("click", (event) => {
+              if (event.target === cartModal) {
+                cartModal.style.display = "none";
+              }
+              if (event.target === favoritesModal) {
+                favoritesModal.style.display = "none";
+              }
+            });
+    
+            // Evento do botão de checkout
+            checkoutButton.addEventListener("click", () => {
+              if (cart.length === 0) {
+                alert("Seu carrinho está vazio. Adicione itens ao carrinho antes de finalizar a compra.");
+              } else {
+                window.location.href = "finalizar-compra.html";
+              }
+            });
+    
+            // Evento para abrir o modal de carrinho
+            cartLink.addEventListener("click", () => {
+              updateCartModal();
+              cartModal.style.display = "block";
+            });
+    
+            // Evento para abrir o modal de favoritos
+            favoritesLink.addEventListener("click", () => {
+              updateFavoritesModal();
+              favoritesModal.style.display = "block";
+            });
+    
+            // Atualiza o conteúdo do modal de carrinho
+            function updateCartModal() {
+              const cartItemsContainer = document.getElementById("cart-items-container");
+              cartItemsContainer.innerHTML = "";
+              let totalPrice = 0;
+    
+              cart.forEach((item, index) => {
+                const itemElement = document.createElement("div");
+                itemElement.classList.add("cart-item");
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div>
+                        <h4>${item.name}</h4>
+                        <p>Preço: R$ ${item.price.toFixed(2)}</p>
+                        <label for="quantity-${index}">Quantidade:</label>
+                        <input type="number" id="quantity-${index}" name="quantity" value="${item.quantity}" min="1">
+                        <button class="remove-item" data-index="${index}"><i class="fa fa-trash"></i></button>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+    
+                // Atualiza quantidade de itens
+                itemElement.querySelector(`#quantity-${index}`).addEventListener("change", (event) => {
+                  const newQuantity = parseInt(event.target.value);
+                  if (newQuantity > 0) {
+                    item.quantity = newQuantity;
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    updateCartModal();
+                  }
+                });
+    
+                // Remove item do carrinho
+                itemElement.querySelector(".remove-item").addEventListener("click", (event) => {
+                  const itemIndex = parseInt(event.target.dataset.index);
+                  cart.splice(itemIndex, 1);
+                  localStorage.setItem("cart", JSON.stringify(cart));
+                  updateCartModal();
+                });
+    
+                totalPrice += item.price * item.quantity;
+              });
+    
+              document.getElementById("total-price").textContent = `R$ ${totalPrice.toFixed(2)}`;
+            }
+    
+            // Atualiza o conteúdo do modal de favoritos
+            function updateFavoritesModal() {
+              const favoritesItemsContainer = document.getElementById("favorites-items-container");
+              favoritesItemsContainer.innerHTML = "";
+    
+              favorites.forEach((item, index) => {
+                const itemElement = document.createElement("div");
+                itemElement.classList.add("cart-item");
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div>
+                        <h4>${item.name}</h4>
+                        <p>Preço: R$ ${item.price.toFixed(2)}</p>
+                        <button class="remove-favorite" data-index="${index}"><i class="fa fa-trash"></i></button>
+                    </div>
+                `;
+                favoritesItemsContainer.appendChild(itemElement);
+    
+                // Remove item dos favoritos
+                itemElement.querySelector(".remove-favorite").addEventListener("click", (event) => {
+                  const itemIndex = parseInt(event.target.dataset.index);
+                  favorites.splice(itemIndex, 1);
+                  localStorage.setItem("favorites", JSON.stringify(favorites));
+                  updateFavoritesModal();
+                });
+              });
+            }
+    
+            // Inicializa modais
+            updateCartModal();
+            updateFavoritesModal();
+          });
+        const nav = document.querySelector(".nav"),
+        searchIcon = document.querySelector("#searchIcon"),
+        navOpenBtn = document.querySelector(".navOpenBtn"),
+        navCloseBtn = document.querySelector(".navCloseBtn");
+      searchIcon.addEventListener("click", () => {
+        nav.classList.toggle("openSearch");
+        nav.classList.remove("openNav");
+        if (nav.classList.contains("openSearch")) {
+          return searchIcon.classList.replace("uil-search", "uil-times");
+        }
+        searchIcon.classList.replace("uil-times", "uil-search");
+      });
+      navOpenBtn.addEventListener("click", () => {
+        nav.classList.add("openNav");
+        nav.classList.remove("openSearch");
+        searchIcon.classList.replace("uil-times", "uil-search");
+      });
+      navCloseBtn.addEventListener("click", () => {
+        nav.classList.remove("openNav");
+      });
+        </script>
+      </body>
+    </html>

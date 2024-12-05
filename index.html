@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- Cabeçalho do documento -->
+  <head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <!-- Link para arquivos de estilos e fontes -->
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <!-- Corpo do documento -->
+  <body>
+    <!-- Barra de navegação -->
+    <header>
+      <nav class="nav">
+        <!-- Logo -->
+        <a href="index.html">
+          <img class="logo" src="imagens/escrita-logo-removebg-preview.png" alt="Logo escrita">
+        </a>
+
+        <!-- Botão de abrir menu (hambúrguer) -->
+        <i class="uil uil-bars navOpenBtn"></i>
+
+        <!-- Links de navegação -->
+        <ul class="nav-links">
+          <!-- Botão para fechar o menu -->
+          <i class="uil uil-times navCloseBtn"></i>
+
+          <!-- Dropdown de produtos -->
+          <li class="dropdown">
+            <i class="uil uil-bolt"></i>
+            <a href="produtos.html">Produtos</a>
+            <div class="dropdown-content">
+              <a href="produtos.html">Smartphones</a>
+              <a href="produtos.html">Smart Watch</a>
+              <a href="produtos.html">Computadores</a>
+              <a href="produtos.html">Inteligência Artificial</a>
+              <a href="produtos.html">Realidade Virtual</a>
+              <a href="produtos.html">Periféricos</a>
+              <a href="produtos.html">Áudio</a>
+              <a href="produtos.html">Energia</a>
+            </div>
+          </li>
+
+          <!-- Outros itens do menu -->
+          <li>
+            <i class="uil uil-star openNav"></i>
+            <a href="#" id="favorites-link">Favoritos</a>
+          </li>
+          <li>
+            <i class="uil uil-shopping-bag openNav"></i>
+            <a href="#" id="cart-link">Carrinho</a>
+          </li>
+          <li>
+            <i class="uil uil-user openNav"></i>
+            <a href="login.html">Conta</a>
+          </li>
+        </ul>
+
+        <!-- Ícone de busca -->
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+
+        <!-- Caixa de busca -->
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Buscar produtos e marcas" />
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <div id="container2">
+            <img src="imagens/metaquest.png" alt="Banner" />
+            <div class="texto">
+                <div class="titulo-banner">
+                    <h1>Meta</h1>
+                    <div class="quest">
+                        <h1>Quest</h1>
+                    </div>
+                    <h1>3</h1>
+                </div>
+                <h2>O futuro da realidade virtual já chegou</h2>
+                <br />
+                <a href="#">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de lançamentos -->
+    <div class="lancamentos-container">
+        <div class="titulo-lancamentos">
+            <h1>Lançamentos</h1>
+            <h2>Descubra o que há de mais recente</h2>
+        </div>
+        <div class="lancamentos">
+            <div class="grid-item">
+                <img class="img1" src="imagens/smartphones.png" alt="Smartphone" />
+                <p class="p1">Smartphones e Acessórios</p>
+            </div>
+            <div class="grid-item">
+                <img class="img2" src="imagens/Dinteligentes.png" alt="Inteligência Artificial">
+                <p class="p2">Dispositivos Inteligentes</p>
+            </div>
+            <div class="grid-item">
+                <img class="img3" src="imagens/img8.png" alt="Óculos VR" />
+                <p class="p3">Computadores</p>
+            </div>
+            <div class="grid-item">
+              <img class="img3" src="imagens/RV.png" alt="Óculos VR" />
+              <p class="p3">Realidade Virtual</p>
+            </div>
+        </div>
+      </div>
+      
+
+    <!-- Banner de frete grátis -->
+    <div class="frete">
+        <img id="frete" src="imagens/fretegratis.png" alt="Frete Gratis" />
+    </div>
+
+    <!-- Seção de produtos principais -->
+    <div class="fundo">
+        <h1>Produtos</h1>
+        <div class="grid-produtos">
+            <div class="roxo">
+                <img class="img1" src="imagens/img1.png" alt="Imagem celulares" />
+                <p>Celulares</p>
+            </div>
+            <div class="azul">
+                <img class="img2" src="imagens/img2.png" alt="Imagem Smart Watch" />
+                <p>Smart Watch</p>
+            </div>
+            <div class="azul">
+                <img class="img3" src="imagens/img5.png" alt="Imagem Energia e Carregamento">
+                <p>Energia e Carregamento</p>
+            </div>
+            <div class="verde">
+                <img class="img4" src="imagens/img3.png" alt="Imagem Inteligência Artificial">
+                <p class="pia">Inteligência Artificial</p>
+            </div>
+            <div class="roxo">
+                <img class="img5" src="imagens/img4.png" alt="Imagem Realidade virtual">
+                <p>Realidade virtual</p>
+            </div>
+            <div class="azul">
+                <img class="img6" src="imagens/img6.png" alt="Imagem Periféricos" />
+                <p>Periféricos</p>
+            </div>
+            <div class="azul">
+                <img class="img7" src="imagens/img7.png" alt="Imagem Áudio" />
+                <p>Áudio</p>
+            </div>
+            <div class="verde">
+                <img class="img8" src="imagens/img8.png" alt="Imagem Computadores" />
+                <p>Computadores</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segundo banner -->
+    <div class="banner2">
+        <img src="imagens/banner 2.png" alt="Banner 2" />
+    </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <div class="container-footer">
+              <div class="row-footer">
+                <!-- Colunas do rodapé com links -->
+                <div class="footer-col">
+                  <h4>Empresa</h4>
+                  <ul>
+                    <li><a href="sobre_nos.html">Sobre nós</a></li>
+                    <li><a href="sobre_nos.html">Nossos serviços</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Obter ajuda</h4>
+                  <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="pagamento.html">Opções de pagamento</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Mais vendidos</h4>
+                  <ul>
+                    <li><a href="produtos.html">Celulares</a></li>
+                    <li><a href="produtos.html">Smart Watch</a></li>
+                    <li><a href="produtos.html">Energia e Carregamento</a></li>
+                    <li><a href="produtos.html"> Inteligência Artificial</a></li>
+                  </ul>
+                </div>
+                <!-- Ícones de mídias sociais -->
+                <div class="footer-col">
+                  <div class="medias-socias">
+                    <a href="https://github.com/Gaby-Lisboa">
+                      <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_.lisbooa/">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabrielly-lisboa-b2830621b/">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h6>Todos os direitos reservados a Gabrielly Lisboa © 2024</h6>
+            </div>
+          </footer>
+  </body>
+  <!-- Script -->
+
+    <script src="script/script.js"></script>
+    <script>
+        const nav = document.querySelector(".nav"),
+            searchIcon = document.querySelector("#searchIcon"),
+            navOpenBtn = document.querySelector(".navOpenBtn"),
+            navCloseBtn = document.querySelector(".navCloseBtn");
+
+        searchIcon.addEventListener("click", () => {
+            nav.classList.toggle("openSearch");
+            nav.classList.remove("openNav");
+            if (nav.classList.contains("openSearch")) {
+                return searchIcon.classList.replace("uil-search", "uil-times");
+            }
+            searchIcon.classList.replace("uil-times", "uil-search");
+        });
+
+        navOpenBtn.addEventListener("click", () => {
+            nav.classList.add("openNav");
+            nav.classList.remove("openSearch");
+            searchIcon.classList.replace("uil-times", "uil-search");
+        });
+
+        navCloseBtn.addEventListener("click", () => {
+            nav.classList.remove("openNav");
+        });
+    </script>
+</body>
+</html>

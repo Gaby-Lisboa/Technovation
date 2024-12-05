@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <header>
+      <nav class="nav">
+        <!-- Logo -->
+        <a href="index.html">
+          <img class="logo" src="imagens/escrita-logo-removebg-preview.png" alt="Logo escrita">
+        </a>
+
+        <!-- Botão de abrir menu (hambúrguer) -->
+        <i class="uil uil-bars navOpenBtn"></i>
+
+        <!-- Links de navegação -->
+        <ul class="nav-links">
+          <!-- Botão para fechar o menu -->
+          <i class="uil uil-times navCloseBtn"></i>
+
+          <!-- Dropdown de produtos -->
+          <li class="dropdown">
+            <i class="uil uil-bolt"></i>
+            <a href="produtos.html">Produtos</a>
+            <div class="dropdown-content">
+              <a href="produtos.html">Smartphones</a>
+              <a href="produtos.html">Smart Watch</a>
+              <a href="produtos.html">Computadores</a>
+              <a href="produtos.html">Inteligência Artificial</a>
+              <a href="produtos.html">Realidade Virtual</a>
+              <a href="produtos.html">Periféricos</a>
+              <a href="produtos.html">Áudio</a>
+              <a href="produtos.html">Energia</a>
+            </div>
+          </li>
+
+          <!-- Outros itens do menu -->
+          <li>
+            <i class="uil uil-star openNav"></i>
+            <a href="#" id="favorites-link">Favoritos</a>
+          </li>
+          <li>
+            <i class="uil uil-shopping-bag openNav"></i>
+            <a href="#" id="cart-link">Carrinho</a>
+          </li>
+          <li>
+            <i class="uil uil-user openNav"></i>
+            <a href="login.html">Conta</a>
+          </li>
+        </ul>
+
+        <!-- Ícone de busca -->
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+
+        <!-- Caixa de busca -->
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Buscar produtos e marcas" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- conteudo do produto -->
+    <main>
+        <section class="produto">
+            <div class="product-container">
+                <div class="image-gallery">
+                    <img src="imagens/iphone15promax1.jpg" alt="iPhone 15 Pro Max" class="thumbnail">
+                    <img src="imagens/iphone15promax1.jpg" alt="iPhone 15 Pro Max" class="thumbnail">
+                    <img src="imagens/iphone15promax1.jpg" alt="iPhone 15 Pro Max" class="thumbnail">
+                </div>
+                <div class="main-image">
+                    <img src="imagens/iphone15promax.png" alt="iPhone 15 Pro Max">
+                </div>
+            </div>
+
+            <div class="informacoes-produto">
+                <div class="container-logo">
+                    <img id="logo" src="imagens/logo apple.jpg" alt="Logo da Apple">
+                    <p>Apple</p>
+                </div>
+                <h2>Apple iPhone 15 Pro Max (512 GB) — Titânio preto</h2>
+                <div class="avaliacao">
+                    <div class="estrelas">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>4.1</p>
+                    </div>
+                </div>
+                <p id="vendido">Vendido e entregue por: TECHNOVATION</p>
+                <p id="estoque">Em estoque</p>
+                <h4>Cores:</h4>
+                <ul class="cores">
+                    <li class="cor preto ativo">Preto</li>
+                    <li class="cor cinza">Cinza</li>
+                    <li class="cor roxo">Roxo</li>
+                    <li class="cor bege">Beje</li>
+                </ul>
+                <div class="especificacoes-produto">
+                    <ul>
+                        <li>
+                            <span class="label">Capacidade de memória:</span>
+                            <span class="value">512GB</span>
+                        </li>
+                        <li>
+                            <span class="old-price">R$9.749,00</span>
+                        </li>
+                        <li>
+                            <span class="new-price">R$8.399,00</span>
+                        </li>
+                        <p>à vista ou em até 10x de R$839,90 sem juros</p>
+                        <li id="li-frete">Frete grátis</li>
+                    </ul>
+                </div>
+                <button class="add-to-cart-button" >
+                    <i class="fa-solid fa-cart-shopping"></i> Adicionar ao Carrinho
+                </button>
+                <button class="favoritar" onclick="toggleFavorite()">
+                    <span class="fa fa-star"></span>
+                </button>
+                <div class="container-frete">
+                    <form id="formCEP">
+                        <label for="cep">Calcular prazo de entrega</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="cep" name="cep" placeholder="Informe seu CEP" required>
+                            <button type="submit">Confirmar</button>
+                        </div>
+                    </form>
+                    <div class="procurarcep-wrapper">
+                        <a id="procurarcep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei
+                            meu CEP</a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+        <!-- modal do carrinho -->
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Seu Carrinho</h2>
+                <div id="cart-items-container"></div>
+                <p>Total: <span id="total-price">R$ 0,00</span></p>
+                <button id="checkout-button">Finalizar Compra</button>
+            </div>
+        </div>
+
+        <!-- lista de favoritos -->
+        <section class="lista-favoritos" id="favoritos-container">
+            <h2>Meus Favoritos</h2>
+            <ul id="lista-favoritos"></ul>
+        </section>
+
+        <!-- avaliações de clientes ficticios -->
+        <section class="avaliacoes">
+            <div class="container-avaliacoes">
+                <div class="resumo-avaliacoes">
+                    <h2>Avaliação dos clientes</h2>
+                    <div class="nota-geral">
+                        <span class="pontuacao">4.1</span>
+                        <span class="estrela">★</span>
+                        <span class="total-avaliacoes">13004 avaliações</span>
+                    </div>
+                    <div class="distribuicao-avaliacoes">
+                        <div class="barra-avaliacao">
+                            <span>5 ★</span>
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 80%;"></div>
+                            </div>
+                            <span>+999</span>
+                        </div>
+                        <div class="barra-avaliacao">
+                            <span>4 ★</span>
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 60%;"></div>
+                            </div>
+                            <span>765</span>
+                        </div>
+                        <div class="barra-avaliacao">
+                            <span>3 ★</span>
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 20%;"></div>
+                            </div>
+                            <span>148</span>
+                        </div>
+                        <div class="barra-avaliacao">
+                            <span>2 ★</span>
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 10%;"></div>
+                            </div>
+                            <span>64</span>
+                        </div>
+                        <div class="barra-avaliacao">
+                            <span>1 ★</span>
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 15%;"></div>
+                            </div>
+                            <span>194</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentarios-clientes">
+                    <h3>4480 comentários</h3>
+                    <div class="comentario">
+                        <div class="cabecalho-comentario">
+                            <span class="usuario-comentario">Simone</span>
+                            <span class="avaliacao-comentario">★★★★★</span>
+                        </div>
+                        <div class="detalhes-comentario">
+                            Armazenamento interno: 512GB | Cor: Cinza
+                        </div>
+                        <div class="texto-comentario">
+                            Celular muito bom com excelentes funções e qualidade! Além da entrega do equipamento
+                            dentro do prazo definido pelo site. Super recomendo esse equipamento e loja virtual.
+                        </div>
+                        <div class="data-comentario">há 3 dias</div>
+                    </div>
+                    <div class="comentario">
+                        <div class="cabecalho-comentario">
+                            <span class="usuario-comentario">Tobias</span>
+                            <span class="avaliacao-comentario">★★★★☆</span>
+                        </div>
+                        <div class="detalhes-comentario">
+                            Armazenamento interno: 512GB | Cor: Roxo
+                        </div>
+                        <div class="texto-comentario">
+                            Iphone não tem segredo. É caro e quem quer paga o preço. É torcer para não ter
+                            problema.
+                        </div>
+                        <div class="data-comentario">há 3 dias</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+      <!-- rodapé -->
+      <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre_nos.html">Sobre nós</a></li>
+                        <li><a href="sobre_nos.html">Nossos serviços</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="pagamento.html">Opções de pagamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Mais vendidos</h4>
+                    <ul>
+                        <li><a href="produtos.html">Celulares</a></li>
+                        <li><a href="produtos.html">Smart Watch</a></li>
+                        <li><a href="produtos.html">Energia e Carregamento</a></li>
+                        <li><a href="produtos.html"> Inteligência Artificial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="https://github.com/Gaby-Lisboa"> <i class="fa fa-github"></i> </a>
+                        <a href="https://www.instagram.com/_.lisbooa/"> <i class="fa fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/in/gabrielly-lisboa-b2830621b/"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <h6> Todos os direitos reservados a Gabrielly Lisboa © 2024</h6>
+        </div>
+
+</body>
+<script src="script/script.js"></script>
+<script>
+    const nav = document.querySelector(".nav"),
+    searchIcon = document.querySelector("#searchIcon"),
+    navOpenBtn = document.querySelector(".navOpenBtn"),
+    navCloseBtn = document.querySelector(".navCloseBtn");
+  searchIcon.addEventListener("click", () => {
+    nav.classList.toggle("openSearch");
+    nav.classList.remove("openNav");
+    if (nav.classList.contains("openSearch")) {
+      return searchIcon.classList.replace("uil-search", "uil-times");
+    }
+    searchIcon.classList.replace("uil-times", "uil-search");
+  });
+  navOpenBtn.addEventListener("click", () => {
+    nav.classList.add("openNav");
+    nav.classList.remove("openSearch");
+    searchIcon.classList.replace("uil-times", "uil-search");
+  });
+  navCloseBtn.addEventListener("click", () => {
+    nav.classList.remove("openNav");
+  });
+</script>
+</html>
